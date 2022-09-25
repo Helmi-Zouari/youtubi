@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtuby</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/yout.png">
+</head>
+
+<body >
+      
+        <nav class="navbar navbar-expand-lg navbar-light  bg-warning">
+          <a class="navbar-brand text-white" href="#" >Youtubi</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="mx-2 my-auto d-inline w-100 ">
+              <div class="input-group ">
+                  <input type="text" class="form-control border border-right-0" id="formcheck" placeholder="Search...">
+                  <span class="input-group-append">
+                      <button class="btn btn-outline-secondary border border-left-1"  id="form-control" type="button">
+                          <i class="fa fa-search" ></i>
+                      </button>
+                  </span>
+              </div>
+          </form>
+          
+          <!-- <input type="text" name="search" placeholder="Search..">
+          <i class="fa-light fa-magnifying-glass"></i> -->
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto d-flex justify-content-end">
+              <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link text-white" href="#">TV</a>
+              </li>
+              <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal" >Sign In</a>
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal" >Sign up</a>
+              </div>
+              </li>
+          </ul>
+          </div>
+      </nav>
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="password" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+            <a href="" class="text-muted">Forgot your Password</a>
+            <a href="" class="mx-auto text-muted">Create an account</a>
+              <button type="button" class="btn btn-warning">Login</button>
+            </div>
+          </div>
+        </div>
+        </div>
+    
+        <div class="content">
+          <h4 class="py-5">Home</h4>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                <a href="watch.html">
+                  <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                    <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 5k vues</s>
+                  </div>
+                </a> 
+                  <div class="card-footer bg-warning">
+                  <small class="text-muted"> 3 mins ago</small>
+                  </div>
+          </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/devtools.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none "><i class="bi bi-camera-reels-fill "></i> 3k vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted bg-warning "><i class="bi bi-calendar-date"></i>  2 hours ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/database.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 2.5k vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i> 6 hours ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/app.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 250 vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i> 10 hours ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/Pinguco2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 9k vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i> 3 weeks ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/cordova.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 1k vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i> 8 weeks ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/ruby.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 200 vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i>  12 weeks ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/php.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 1.2k vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i>  13 weeks ago</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+            <div class="card">
+              <a href="watch.html">
+                <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-title text-dark font-weight-bold">Explaining the RESTful Philosophy - Learn how to build REST APIs</p>
+                  
+                  <s class="text-muted text-decoration-none"><i class="bi bi-camera-reels-fill"></i> 1.9k vues</s>
+                </div>
+              </a> 
+              <div class="card-footer bg-warning">
+                <small class="text-muted "><i class="bi bi-calendar-date"></i> 15 weeks ago</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+      </div>
+
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
